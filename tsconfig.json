@@ -1,0 +1,9 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types"]
+    },
+    "include": ["generated/**/*", "MapControl/**/*.ts", "index.ts"],
+    "exclude": ["node_modules"]
+}
