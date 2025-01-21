@@ -1,9 +1,14 @@
 {
     "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
     "compilerOptions": {
-        "esModuleInterop": true,
-        "typeRoots": ["node_modules/@types"]
+      "esModuleInterop": true,
+      "typeRoots": [
+        "node_modules/@types",
+        "node_modules/powerapps-component-framework"
+      ],
+      "types": ["xrm","powerapps-component-framework" ]
     },
     "include": ["generated/**/*", "MapControl/**/*.ts", "index.ts"],
     "exclude": ["node_modules"]
 }
+  
